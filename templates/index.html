@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Anime Watchlist</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<aside class="sidebar">
+<h2 class="logo">✦ Anime<span>Watchlist</span></h2>
+<nav>
+<a class="active" href="/">⌂ &nbsp; Home</a>
+<a href="#anime">◉ &nbsp; Browse Anime</a>
+<a href="#watchlist">▣ &nbsp; My Watchlist</a>
+</nav>
+<div class="sidebar-bottom">
+<p>Your anime journey starts here.</p>
+</div>
+</aside>
+<main class="main-content">
+<header class="topbar">
+<form id="search-form">
+<input
+
+                    id="search-input"
+
+                    type="search"
+
+                    placeholder="Search anime, genres, or titles..."
+
+                    aria-label="Search anime"
+>
+<button type="submit">Search</button>
+</form>
+<div class="profile">● &nbsp; Guest</div>
+</header>
+<section class="hero">
+<div class="hero-content">
+<p class="eyebrow">YOUR ANIME COLLECTION</p>
+<h1>Anime Watchlist</h1>
+<h3>Discover. Track. Enjoy.</h3>
+<p>Find your next favorite anime and keep your journey organized.</p>
+<a class="primary-button" href="#anime">Explore Anime →</a>
+</div>
+</section>
+<section class="anime-section" id="anime">
+<div class="section-heading">
+<h2>🔥 Anime to Explore</h2>
+<p>Find your next adventure.</p>
+</div>
+<p id="message">Loading anime...</p>
+<div id="anime-grid" class="anime-grid"></div>
+</section>
+<section class="watchlist-section" id="watchlist">
+<h2>📚 My Watchlist</h2>
+<p>Your selected anime will appear here.</p>
+</section>
+<footer>
+<p>Anime Watchlist · Made by Denij khadka</p>
+</footer>
+</main>
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+ 
